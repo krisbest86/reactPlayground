@@ -1,0 +1,61 @@
+{
+  "name": "zgarnijlige_front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "font-awesome": "^4.7.0",
+    "joi": "^14.3.1",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.11",
+    "normalize.css": "^8.0.1",
+    "popper.js": "^1.14.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-redux": "^5.0.6",
+    "react-responsive": "^6.1.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.5",
+    "react-toastify": "^5.3.2",
+    "react-transition-group": "^4.3.0",
+    "redux": "^3.7.2",
+    "rimraf": "^2.6.2",
+    "shortid": "^2.2.14"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom --verbose false",
+    "test:ci": "react-scripts test -- --no-watchman",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "ajv": "^6.10.2",
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "check-prop-types": "^1.1.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-watch": "^5.0.1",
+    "jest": "^23.6.0",
+    "jest-enzyme": "^7.1.2",
+    "moxios": "^0.4.0",
+    "postcss-for": "^2.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-mixins": "^6.2.2",
+    "postcss-nested": "^4.1.2",
+    "postcss-simple-vars": "^5.0.2"
+  }
+}

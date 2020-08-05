@@ -1,0 +1,54 @@
+/*----------------------DEPRACTED!!!!!!!!!*/
+/*----------------------DEPRACTED!!!!!!!!!*/
+/*----------------------DEPRACTED!!!!!!!!!*/
+/*----------------------DEPRACTED!!!!!!!!!*/
+/*----------------------DEPRACTED!!!!!!!!!*/
+
+.clickable {
+  cursor: pointer;
+}
+
+.modal-backdrop {
+  opacity: 0.9;
+}
+
+.modal-dialog {
+  opacity: 1;
+}
+
+.containerMain {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+}
+
+.alert {
+  font-size: 0.6em
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@keyframes highlight {
+  0% {
+    background: Aquamarine;
+    /* lovely yellow colour */
+  }
+
+  50% {
+    background: #007bff;
+    /* lovely yellow colour */
+  }
+
+  100% {
+    background: none;
+  }
+}
+
+h2 {
+  animation: highlight 1.5s;
+}

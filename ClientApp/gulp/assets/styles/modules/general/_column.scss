@@ -1,0 +1,83 @@
+.column {
+    height: 100%;
+
+    &--widthAdjustedWidth>div {
+        width: auto;
+    }
+
+    &--widthAdjustedWidth>div>div {
+        width: auto;
+    }
+
+    &__smallest-3 {
+        float: left;
+        width: 25%;
+        height: 100%;
+    }
+
+    &__smallest-6 {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    &__smallest-9 {
+        float: left;
+        width: 75%;
+        height: 100%;
+    }
+
+    &__smallest-12 {
+        float: left;
+        width: 100%;
+        height: 100%;
+    }
+
+    @mixin atMedium {
+        &__medium {
+            float: left;
+            width: 100%
+        }
+
+        &__medium-2 {
+            float: left;
+            width: 16.66%
+        }
+
+        &__medium-3 {
+            float: left;
+            width: 25%
+        }
+
+        &__medium-4 {
+            float: left;
+            width: 33.33%
+        }
+
+        &__medium-6 {
+            float: left;
+            width: 50%
+        }
+
+        &__medium-8 {
+            float: left;
+            width: 66.66%
+        }
+
+        &__medium-12 {
+            float: left;
+            width: 100%
+        }
+
+
+        &__medium-4--larger {
+            float: left;
+            width: 37%
+        }
+
+        &__medium-8--smaller {
+            float: left;
+            width: 63%
+        }
+    }
+}

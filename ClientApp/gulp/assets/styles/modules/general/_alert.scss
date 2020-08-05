@@ -1,0 +1,9 @@
+.alert {
+    color: red;
+    font-size: 0.9rem;
+
+    @mixin atSmall {
+        font-size: 1.5rem;
+
+    }
+}

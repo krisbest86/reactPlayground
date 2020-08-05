@@ -1,0 +1,44 @@
+.list {
+    margin: auto;
+    max-width: 40rem;
+    font-size: 1rem;
+
+    @mixin atSmall {
+        font-size: 3rem;
+    }
+
+
+
+
+    &__ul {
+        list-style: none;
+        transform: translateX(-1rem);
+
+
+        &__li--selected {
+            background-color: $primaryColor;
+        }
+
+        &__li>a {
+            display: block;
+            pointer-events: none;
+            text-decoration: none;
+            color: #000000;
+            line-height: 2.5rem;
+            border-bottom-style: solid;
+            border-bottom-width: 0.1rem;
+            border-bottom-color: #CCCCCC;
+            padding-left: 0.7rem;
+            cursor: pointer;
+
+            @mixin atSmall {
+                line-height: 4.5rem;
+            }
+
+        }
+
+
+    }
+
+
+}

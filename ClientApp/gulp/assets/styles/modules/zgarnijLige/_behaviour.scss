@@ -1,0 +1,71 @@
+.behaviour {
+    &--moveDown--17 {
+        transform: translateY(17rem);
+        animation-duration: 3s;
+    }
+
+    &--centered {
+        text-align: center;
+    }
+
+    &--marginVertical {
+        margin: 1rem;
+    }
+
+    &--notVisible {
+        display: none;
+    }
+
+    &--inner--centered {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%)
+    }
+
+    &--vertical-center {
+        transform: translateY(25%);
+    }
+
+    &--horizontal-center {
+        transform: translateX(50%);
+    }
+
+    &--overflow--auto {
+        overflow-x: auto;
+    }
+
+    &--bottomParent {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    &--pointerOff {
+        pointer-events: none;
+
+    }
+
+
+    &--minwidth15 {
+        min-width: 15rem;
+    }
+
+    &--minwidth20 {
+        min-width: 20rem;
+    }
+
+    &--maxwidth3 {
+        max-width: 4em;
+    }
+
+
+
+
+
+
+    &--cell {
+        display: table-cell;
+    }
+}

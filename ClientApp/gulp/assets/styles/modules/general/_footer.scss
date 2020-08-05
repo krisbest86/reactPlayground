@@ -1,0 +1,27 @@
+.footer {
+
+    position: static;
+    width: 100%;
+    background-color: $primaryColor;
+    color: white;
+    text-align: center;
+    height: 5rem;
+
+
+    &--absolute {
+        position: absolute;
+        bottom: 0;
+    }
+
+    @mixin atSmall {
+        height: 7rem;
+
+    }
+
+
+    @mixin atMedium {
+        height: 12rem;
+
+    }
+
+}

@@ -1,0 +1,73 @@
+@keyframes pagination-in {
+    from {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.pagination {
+    position: relative;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0;
+    z-index: 6;
+
+    animation: pagination-in 500ms ease both;
+    animation-timeout: 200ms;
+
+    &__container {
+        background-color: $secondaryColor
+    }
+
+    &__i {
+        font-size: 1.1rem;
+        text-decoration: none;
+
+        transition: background 250ms;
+
+        display: inline-block;
+        text-transform: uppercase;
+        margin: 0 0.15rem 0.3rem;
+        height: 2.8rem;
+        min-width: 2.8rem;
+        border-radius: 2.8rem;
+        border: 0.15rem solid #fff;
+        line-height: 2.8rem;
+        padding: 0;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: .03em;
+
+        &:first-child,
+        &:last-child {
+            padding: 0 1.1rem;
+            margin: 0 0.8rem 0.4rem;
+        }
+
+        &:last-child,
+        &:nth-child(2),
+        &:nth-last-child(2) {
+            display: inline-block;
+        }
+    }
+
+    &__i--selected {
+        background-color: #000;
+        color: #fff;
+    }
+
+    &__i:hover {
+        background-color: #000;
+        color: #fff;
+    }
+
+    &:not([actpage="1"]) &__i:nth-child(1) {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+
+    @mixin clearfix;
+
+    &--column {
+        flex-direction: column;
+    }
+
+
+    &--row {
+        flex-direction: row;
+    }
+
+    &--centered {
+        justify-content: center;
+        align-items: stretch;
+    }
+
+
+
+}

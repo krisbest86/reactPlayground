@@ -1,0 +1,45 @@
+.table {
+    margin: 2rem 2rem;
+    display: block;
+
+    &--mobile {
+
+        thead,
+        tbody,
+        th,
+        td {
+            display: block;
+
+        }
+
+        tr {
+            border: solid;
+            border-color: $primaryColor;
+            display: block;
+
+        }
+
+        tr:hover {
+            background-color: yellow;
+        }
+    }
+
+    th {
+        background: #3498db;
+        color: white;
+        font-weight: bold;
+
+        &>div>input {
+            width: 10rem;
+        }
+    }
+
+    td,
+    th {
+        padding: 0.7rem;
+        border-bottom: 0.1rem solid #ccc;
+        text-align: left;
+        font-size: 1.1rem;
+    }
+
+}

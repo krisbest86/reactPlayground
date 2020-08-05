@@ -1,0 +1,169 @@
+.navbar {
+    height: 5rem;
+    width: 100%;
+    background-color: #4d4d4d;
+    position: relative;
+
+    @mixin atSmall {}
+
+    &>input {
+        display: none;
+    }
+
+    &>&__header {
+        padding: 1em;
+        text-align: center;
+        font-weight: 600;
+
+        @mixin atSmall {
+            position: absolute;
+            min-width: 250px;
+        }
+
+    }
+
+
+    &__btn {
+        display: inline-block;
+        position: absolute;
+        right: 0%;
+        top: 0%;
+
+        @mixin atSmall {
+            display: none;
+        }
+
+
+    }
+
+
+    &__btn>label {
+        display: inline-block;
+        width: 3.125rem;
+        height: 3.125rem;
+        padding: 1rem;
+    }
+
+
+    &__btn>label>span {
+        display: block;
+        width: 1.8em;
+        height: 0.625em;
+        border-top: 0.165em solid #eee;
+    }
+
+    &__links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: grey;
+        height: 0%;
+        transition: all 0s ease-in;
+        overflow-y: hidden;
+        top: 3.125rem;
+        left: 0%;
+
+        &--enabled {
+            height: calc(50vh - 3.125rem);
+            overflow: auto;
+        }
+
+        &--enabled>a {
+            display: block;
+            width: 100%;
+            text-decoration: none;
+        }
+
+        &--enabled>a>div {
+            margin: 1em auto
+        }
+
+        @mixin atSmall {
+            display: flex;
+            position: initial;
+            overflow: visible;
+            flex-direction: row-reverse;
+            @mixin clearfix;
+
+
+        }
+    }
+
+    &__links>a {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+
+        @mixin atSmall {
+            margin: 0%;
+            padding: 0%;
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    &__links>a>div {
+        margin: 1em auto;
+
+        @mixin atSmall {
+            height: auto;
+            width: auto;
+            margin: auto;
+            border: none;
+            font-weight: bold;
+            background-color: transparent;
+            font-size: 1.4em;
+            text-align: right;
+            padding-right: 1em;
+
+
+            :hover {
+                color: white;
+            }
+        }
+    }
+
+
+    &--main {
+        background-color: $primaryColor;
+
+        &__links {
+            background-color: transparent;
+            font-size: 1em;
+            display: flex;
+            position: initial;
+            overflow: visible;
+            flex-direction: row-reverse;
+            @mixin clearfix;
+        }
+
+
+
+        &__links>a>div {
+            margin: 0%;
+            width: auto;
+            height: auto;
+            padding: 0.5em 1em;
+            border: none;
+            font-weight: bold;
+
+
+        }
+
+    }
+
+    &--zgarnijLige {
+        background-color: $secondaryColor;
+        margin-bottom: 1rem;
+
+        &__links {
+            background-color: $secondaryColor;
+        }
+
+    }
+
+
+
+
+
+}

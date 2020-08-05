@@ -1,0 +1,82 @@
+.dropDown {
+
+    &--left {
+        ul {
+            text-align: left;
+            max-width: 15rem;
+        }
+    }
+
+
+    ul {
+        padding: 0;
+        margin-bottom: 0.1rem;
+        list-style: none;
+        position: relative;
+
+        @mixin clearfix;
+    }
+
+    ul li {
+        display: inline-block;
+        background-color: $primaryColor;
+    }
+
+    a {
+        display: block;
+        padding: 0 0.5rem;
+        color: #FFF;
+        font-size: 1rem;
+        line-height: 2rem;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: #000000;
+    }
+
+    a>i:hover {
+        color: red;
+    }
+
+    ul span {
+        background-color: $primaryColor;
+        position: absolute;
+        padding: 0.5rem;
+        top: -1rem;
+        width: 100%;
+
+    }
+
+    ul ul {
+        display: none;
+        position: absolute;
+        top: 1rem;
+        overflow: overlay;
+        z-index: 1;
+        width: 100%;
+    }
+
+    ul li:hover>ul {
+        display: inherit;
+        visibility: visible;
+
+    }
+
+
+
+    ul ul li {
+        float: none;
+        display: list-item;
+        position: relative;
+    }
+
+
+
+    ul ul ul li {
+        position: relative;
+        top: -1rem;
+    }
+
+
+}

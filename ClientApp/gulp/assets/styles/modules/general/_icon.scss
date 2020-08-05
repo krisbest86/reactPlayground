@@ -1,0 +1,34 @@
+i {
+    font-size: 3rem;
+
+    @mixin atSmall {
+        font-size: 4rem;
+    }
+
+
+}
+
+.icon {
+
+    &-appear {}
+
+    &-appear-active {
+        transform: rotate(-180deg);
+        transition: transform 0.4s ease-in-out;
+    }
+
+    &-enter {}
+
+    &-enter-active {
+        transform: rotate(-360deg);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &-exit {}
+
+    &-exit-active {
+        transform: rotate(-360deg);
+        transition: transform 0.2s ease-in-out;
+    }
+
+}

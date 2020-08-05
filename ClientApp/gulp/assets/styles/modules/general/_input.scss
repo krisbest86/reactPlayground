@@ -1,0 +1,25 @@
+.input {
+    margin: 0.4em 0;
+    width: 100%;
+    font-size: 1em;
+
+    @mixin atSmall {
+        font-size: 2em
+    }
+
+
+    @mixin atMedium {
+        font-size: 3em;
+
+    }
+
+    &--header {
+        margin: 0.8em 0;
+    }
+
+    &--login {
+        border: solid $primaryColor;
+        padding: 0.5em 0.5em;
+
+    }
+}

@@ -1,0 +1,36 @@
+.btn {
+    background-color: $primaryColor;
+    color: #FFF;
+    text-decoration: none;
+    padding: 0.75rem 1.3rem;
+    display: inline-block;
+    font-size: 1rem;
+
+    @mixin atSmall {
+        font-size: 1.5rem;
+
+    }
+
+    &__orange {
+        background-color: $mainOrange;
+    }
+
+    &__large {
+
+
+        @mixin atSmall {
+            font-size: 2rem;
+            padding: 1.1rem 1.9rem;
+        }
+    }
+
+    &-appear {}
+
+    &-appear-active {
+        transform: scale(1.2);
+        color: black;
+        background-color: #07bc0c;
+        transition: transform 2s color 1s background-color 1s ease-out 2s;
+        transition-duration: 3s;
+    }
+}

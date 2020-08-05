@@ -1,0 +1,60 @@
+.collapseList {
+    min-height: 5rem;
+    padding: 0.5rem 0.5rem;
+    border: solid;
+    border-color: $primaryColor;
+    background-color: $secondaryColor;
+
+    label {
+        font-size: 3rem;
+        cursor: pointer;
+
+    }
+
+    &:hover {
+        background: #26C281;
+    }
+
+    ul>li:hover {
+        background: $primaryColor;
+    }
+
+    &--visible {
+        ul {
+            height: 100%;
+        }
+
+        ul>li {
+            visibility: visible
+        }
+
+
+    }
+
+    &--notvisible {
+        ul {
+            height: 0;
+        }
+
+        ul>li {
+            visibility: collapse
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    &--visible {
+
+        ul {
+            visibility: visible;
+        }
+    }
+
+
+}

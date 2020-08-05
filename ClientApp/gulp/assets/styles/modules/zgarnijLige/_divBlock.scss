@@ -1,0 +1,39 @@
+.divBlock {
+    display: "flex";
+    justify-content: "center";
+    align-items: "center";
+    @mixin clearfix;
+
+    &>a {
+        text-decoration: none;
+    }
+
+    a>div>div {
+        margin: 1rem auto;
+    }
+
+    &--column {
+        flex-direction: "column";
+        padding: 1rem;
+    }
+
+    &--selectedSlide {
+        border: solid;
+        padding: 0em 1em;
+        height: 3em;
+        border: "solid";
+        height: "100%";
+        background-color: $primaryColor;
+        transition: "all 0.75s linear";
+    }
+
+    &--slide {
+        margin: 0em 1em;
+        padding: 0em 0.5em;
+        height: 3em;
+        background-color: $secondaryColor;
+        transition: "all 0.75s linear";
+    }
+
+    ;
+}
